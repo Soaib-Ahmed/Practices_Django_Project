@@ -1,0 +1,11 @@
+<h3>Hello {{ receiver.first_name }} {{ receiver.last_name }},</h3>
+
+<p>You have received a money transfer of ${{ amount|floatformat:2 }} from {{ user.username }}.</p>
+
+<p>After the transfer, your updated account balance is ${{ receiver.account.balance }}.</p>
+
+<p>Sender: {{ user.first_name }} {{ user.last_name }}</p>
+
+<p>Thanks for using our money transfer service!</p>
+
+<p>Amar Bank</p>
